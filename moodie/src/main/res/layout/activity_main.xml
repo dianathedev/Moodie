@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.example.rui.location.MainActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputLocation"
+        android:layout_marginTop="39dp"
+        android:hint="Enter a location (optional)"
+        android:layout_below="@+id/logo"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:minHeight="75dp"
+        android:minWidth="180dp"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp"
+        android:text="Hungry? Pick a mood: "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:adjustViewBounds="true"
+        android:id="@+id/message"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/firstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/secondView"
+        android:orientation="vertical"
+        android:nestedScrollingEnabled="true"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        android:paddingLeft="10dp"
+        android:gravity="bottom"
+        android:weightSum="1">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mood1"
+            android:minWidth="170dp"
+            android:minHeight="98dp"
+            android:adjustViewBounds="true"
+            android:gravity="bottom"
+            android:background="@drawable/background"
+            android:onClick="buttonClicked"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#happy"
+            android:textColor="#000000"
+            android:id="@+id/buttonOneText"
+            android:textSize="18sp"
+
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mood4"
+            android:minWidth="170dp"
+            android:minHeight="98dp"
+            android:adjustViewBounds="true"
+            android:gravity="bottom"
+            android:background="@drawable/background"
+            android:onClick="buttonClicked"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Healthy"
+            android:id="@+id/buttonFourText"
+            android:textColor="#000000"
+            android:textSize="18sp"
+
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/thirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/secondView"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:gravity="bottom">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mood2"
+            android:minWidth="170dp"
+            android:minHeight="98dp"
+            android:adjustViewBounds="true"
+            android:gravity="bottom"
+            android:background="@drawable/background"
+            android:onClick="buttonClicked"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#sad"
+            android:textColor="#000000"
+            android:id="@+id/buttonTwoText"
+            android:textSize="18sp"
+
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mood3"
+            android:minWidth="170dp"
+            android:minHeight="98dp"
+            android:adjustViewBounds="true"
+            android:gravity="bottom"
+            android:background="@drawable/background"
+            android:onClick="buttonClicked"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonThreeText"
+            android:text="#adventurous"
+            android:textColor="#000000"
+            android:textSize="18sp"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
