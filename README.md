@@ -1,1 +1,3 @@
 # Moodie
+
+Mobile application for Android devices that uses the Yelp API to provide users with suggestions for food/entertainment establishments. If the user does not provide a specific location, than their current location will be determined using the GPS system on their device and a location will be found that way. Once the user enters a location, or not, they are asked about their current mood. They are given the options: happy, sad, healthy, or adventurous. A list tailored to the users inputs are then generated. From there the user can chose to click on an image and are given more information about such place. 
